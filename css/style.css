@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/*DEBUG*/
 .container{ 
     width: 1000px;
     margin: auto;
@@ -23,6 +24,7 @@
     margin: 0 4px;
 }
 
+/*IMMAGINI*/
 #product{ 
     width: 100%;
     height: 500px;
