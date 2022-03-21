@@ -23,14 +23,24 @@
     margin: 0 4px;
 }
 
+#product{ 
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: inline-block;
+    margin-top: 15px;
+    position: relative;
+}
+
 .product{ 
     width: 100%;
     height: 500px;
     object-fit: cover;
-    display: block;
-    margin-top: 25px;
+    display: inline-block;
+    margin-top: 15px;
     position: relative;
 }
+
 
 /*TESTO SU FOTO*/
 .sale{ 
@@ -60,13 +70,18 @@
 .heart{ 
     position: absolute;
     left: 291px;
-    bottom: 450px;
+    bottom: 430px;
     color: black;
     background-color: white;
     font-size: 25px;
     font-family: 'Nanum Gothic', sans-serif;
     padding: 4px 10px 4px 10px;
     text-align: center;
+    display: none;
+}
+
+#product:hover .heart{
+    display: block;
 }
 /*FINE TESTO SU FOTO*/
 
@@ -96,3 +111,27 @@
     text-decoration: line-through;
 }
 /*FINE INFO PRODOTTO*/
+
+/*HOVER*/
+
+.product_hover{ 
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-top: 15px;
+    display: none;
+    position: relative;
+}
+
+#product:hover .product_hover{ 
+    display: none;
+}
+
+#product:hover .product{ 
+    display: none;
+}
+
+#product:hover .product_hover{ 
+    display: block;
+}
+/*FINE HOVER*/
